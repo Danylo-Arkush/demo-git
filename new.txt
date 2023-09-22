@@ -1,4 +1,138 @@
-1
-2
-3
-4
+.photo-container {
+  display: flex;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*height: 100vh;*/
+  flex-direction: column;
+  /* Выравнивание по вертикали */
+}
+
+.large-photo {
+    width: 100%;
+    
+}
+.obj1, .obj2, .obj3, .obj4, .obj5, .obj6, .obj7, .obj8, .obj9{
+    position: absolute;
+    top: 0;
+}
+
+
+.obj1.animate {
+    opacity: 0;
+    animation: myAnim 1s ease 1.6s 1 normal forwards;
+   position: absolute;
+    top: 0;
+    
+}
+
+
+.obj2.animate{
+    opacity: 0;
+    animation: myAnim 1s ease 2.4s 1 normal forwards;
+   position: absolute;
+    top: 0;
+    
+}
+
+
+.obj3.animate {
+    opacity: 0;
+    animation: myAnim 1s ease 1s 1 normal forwards;
+   position: absolute;
+    top: 0;
+    
+}
+
+
+
+.obj4.animate {
+    opacity: 0;
+    animation: myAnim 1s ease 1.2s 1 normal forwards;
+   position: absolute;
+    top: 0;
+    
+}
+
+
+.obj5.animate {
+   opacity: 0;
+    animation: myAnim 1s ease 2.6s 1 normal forwards;
+    position: absolute;
+    top: 0;
+    /*right: 0; */
+    
+}
+/*.small-obj5{*/
+    /*width: 100px;*/
+    /*height: 200px;*/
+/*}*/
+
+.obj6.animate {
+    opacity: 0;
+    animation: myAnim 1s ease 2.8s 1 normal forwards;
+   position: absolute;
+    top: 0;
+    
+}
+
+
+.obj7.animate {
+    opacity: 0;
+    animation: myAnim 1s ease 1.8s 1 normal forwards;
+   position: absolute;
+    top: 0;
+    /*right: 0;*/
+}
+
+
+.obj8.animate {
+    opacity: 0;
+    animation: myAnim 1s ease 2s 1 normal forwards;
+    position: absolute;
+    top: 0;
+    /*right: 0;*/
+}
+
+.obj9.animate{
+    opacity: 0;
+    animation: myAnim 1s ease 2.2s 1 normal forwards;
+    
+    position: absolute;
+    top: 0;
+    /*right: 0;*/
+}
+
+
+.small-object {
+  cursor: pointer;
+  
+  transition: text-shadow 0.3s ease-in-out;
+  
+  /*filter: grayscale();*/
+}
+
+.object-description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 5%; /* Размещение справа от изображения */
+  
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+}
+
+
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
